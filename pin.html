@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>pin</title>
+</head>
+<body class="bg-blue-700">
+    <div class="flex justify-center space-x-40 mt-20">
+        <div>
+            <img src="/img/pin.png">
+        </div>
+        <div class="text-white text-3xl text-center space-y-32 pt-20">
+            <div class="text-center font-bold">
+                <p>MASUKAN PIN</p>
+            </div>
+            <form onsubmit="pin()">
+                <input type="password" id="angkapin" required class="text-black" placeholder="masukan pin">
+                <input type="submit" value="ENTER">
+            </form>
+            <div class="text-center font-bold">
+                <p>TEKAN 'ENTER' JIKA SELESAI <br>MEMASUKAN PIN</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function pin() {
+        let pin = document.getElementById("angkapin").value;
+        if (pin == 123456) {
+            window.open ('tunai.html','_blank')
+            window.close ('')
+        } else {
+            alert ("pin yang anda masukan salah")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>lainnya</title>
+</head>
+<body class="bg-blue-700">
+    <div class="justify-center mt-20">
+        <div class="text-white text-3xl text-center">
+            <p>PILIH JENIS TRANSAKSI</p>
+        </div>
+        <div class="flex justify-between mr-80 ml-80 text-white text-3xl pt-10">
+            <div class="space-y-20">
+                <button onclick=""><- PENARIKAN</button>
+                <br>
+                <button onclick=""><- TRANSFER</button>
+                <br>
+                <button onclick=""><- PEMBELIAN</button>
+                <br>
+                <button onclick=""><- LAINNYA</button>
+            </div>
+            <div class="space-y-20">
+                <button onclick="">INFO REKENING -></button>
+                <br>
+                <button onclick="">PEMBAYARAN -></button>
+                <br>
+                <button onclick="">UBAH PIN -></button>
+                <br>
+                <button onclick="keluar()">KELUAR -></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function keluar() {
+        window.open('ambil.html','_blank')
+        window.close('')
+    }
+</script>
+</html>
